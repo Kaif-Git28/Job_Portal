@@ -48,6 +48,7 @@ const Login = () => {
             dispatch(setLoading(false));
         }
     }
+    
     useEffect(()=>{
         if(user){
             navigate("/");
@@ -55,6 +56,7 @@ const Login = () => {
     },[])
     return (
         <div>
+            
             <Navbar />
             <div className='flex items-center justify-center max-w-7xl mx-auto'>
                 <form onSubmit={submitHandler} className='w-1/2 border border-gray-200 rounded-md p-4 my-10'>
